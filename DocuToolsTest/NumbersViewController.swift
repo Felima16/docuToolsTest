@@ -9,17 +9,34 @@
 import UIKit
 
 class NumbersViewController: UIViewController {
-
+    
+    var numbers:[Int] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        initNumbers()
+    }
+    
+    private func initNumbers(){
+        for i in 0...100{
+            let n = i * i
+            numbers.append(n)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension NumbersViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 100
     }
-
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "numberIdentifier") as! UITableViewCell
+        cell.textLabel?.text = "\(numbers[indexPath.row])"
+        return cell
+    }
+    
+    
 }
 

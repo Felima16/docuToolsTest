@@ -16,20 +16,26 @@ class AlertViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func alertView(_ sender: Any) {
+        NSLog("Alert View", [])
+        
+        let alert = UIAlertController(title: "DocuTools", message: "teste para vaga ios no alert", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Okay", style: .default, handler: nil)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(ok)
+        alert.addAction(cancel)
+        self.present(alert, animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func actionSheet(_ sender: Any) {
+        NSLog("Action Sheet", [])
+        
+        let action = UIAlertController(title: "DocuTools", message: "teste para vaga ios no action", preferredStyle: .actionSheet)
+        let ok = UIAlertAction(title: "Okay", style: .default, handler: nil)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        action.addAction(ok)
+        action.addAction(cancel)
+        self.present(action, animated: true, completion: nil)
     }
-    */
-
+    
 }

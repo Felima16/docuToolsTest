@@ -7,7 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,7 +60,7 @@
                             <constraint firstAttribute="trailing" secondItem="6ks-iI-7Tz" secondAttribute="trailing" id="ykA-yg-8ww"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Numbers" id="W5F-6s-sHQ"/>
+                    <tabBarItem key="tabBarItem" title="Numbers" image="hashIcon" id="W5F-6s-sHQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,7 +69,6 @@
         <!--Google-->
         <scene sceneID="c4X-bm-t3B">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkQ-nv-aco" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ZNO-cT-vIw" customClass="WebviewViewController" customModule="DocuToolsTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CV6-xv-0Fk"/>
@@ -80,10 +79,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxx-Sb-Gm1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7A-PF-5oo">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="86.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,7 +92,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a7-VP-EgG">
-                                        <rect key="frame" x="75" y="0.0" width="75" height="66.5"/>
+                                        <rect key="frame" x="75" y="0.0" width="75" height="86.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,7 +102,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCJ-MI-fBO">
-                                        <rect key="frame" x="225" y="0.0" width="75" height="66.5"/>
+                                        <rect key="frame" x="225" y="0.0" width="75" height="86.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="stop"/>
@@ -112,7 +111,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANQ-C6-i3r">
-                                        <rect key="frame" x="300" y="0.0" width="75" height="66.5"/>
+                                        <rect key="frame" x="300" y="0.0" width="75" height="86.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="reload"/>
@@ -121,7 +120,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCA-ap-Bf7">
-                                        <rect key="frame" x="150" y="0.0" width="75" height="66.5"/>
+                                        <rect key="frame" x="150" y="0.0" width="75" height="86.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="home"/>
@@ -156,13 +155,13 @@
                                 </constraints>
                             </view>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dZ-0Q-ORJ">
-                                <rect key="frame" x="0.0" y="66.5" width="375" height="551.5"/>
+                                <rect key="frame" x="0.0" y="86.5" width="375" height="531.5"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Fxx-Sb-Gm1" firstAttribute="height" secondItem="SVc-E6-xud" secondAttribute="height" multiplier="0.1" id="CWE-Xu-hny"/>
+                            <constraint firstItem="Fxx-Sb-Gm1" firstAttribute="height" secondItem="SVc-E6-xud" secondAttribute="height" multiplier="0.13" id="CWE-Xu-hny"/>
                             <constraint firstAttribute="trailing" secondItem="Fxx-Sb-Gm1" secondAttribute="trailing" id="MdD-42-Zea"/>
                             <constraint firstItem="3dZ-0Q-ORJ" firstAttribute="leading" secondItem="SVc-E6-xud" secondAttribute="leading" id="Peq-O6-ePs"/>
                             <constraint firstItem="Fxx-Sb-Gm1" firstAttribute="baseline" secondItem="3dZ-0Q-ORJ" secondAttribute="firstBaseline" id="T2t-M9-RC9"/>
@@ -172,11 +171,12 @@
                             <constraint firstItem="yrc-2X-DcY" firstAttribute="top" secondItem="3dZ-0Q-ORJ" secondAttribute="bottom" id="ttm-AH-ScI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Google" id="14X-ua-zpR"/>
+                    <tabBarItem key="tabBarItem" title="Google" image="googleIcon" id="14X-ua-zpR"/>
                     <connections>
                         <outlet property="homeWebView" destination="3dZ-0Q-ORJ" id="8cM-Jh-CWd"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkQ-nv-aco" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077.5" y="132.5"/>
         </scene>
@@ -192,24 +192,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XS7-u4-LeW">
-                                <rect key="frame" x="37" y="267" width="300" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Action Sheet"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XS7-u4-LeW">
+                                <rect key="frame" x="208" y="300" width="131" height="67"/>
+                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Action Sheet">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSheet:" destination="8Mw-CH-knC" eventType="touchUpInside" id="YXE-5K-pDn"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yk-qM-rWk">
-                                <rect key="frame" x="37" y="175" width="150" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Alert View"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yk-qM-rWk">
+                                <rect key="frame" x="36" y="300" width="131.5" height="67"/>
+                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Alert View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="alertView:" destination="8Mw-CH-knC" eventType="touchUpInside" id="Xgb-MN-GtA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XS7-u4-LeW" firstAttribute="width" secondItem="xNb-2g-iCq" secondAttribute="width" multiplier="0.35" id="1Ie-sn-cgw"/>
+                            <constraint firstItem="XS7-u4-LeW" firstAttribute="centerY" secondItem="xNb-2g-iCq" secondAttribute="centerY" id="1zw-ev-rh4"/>
+                            <constraint firstItem="3Yk-qM-rWk" firstAttribute="width" secondItem="XS7-u4-LeW" secondAttribute="width" id="AHO-Px-lps"/>
+                            <constraint firstItem="3Yk-qM-rWk" firstAttribute="leading" secondItem="xNb-2g-iCq" secondAttribute="leadingMargin" constant="20" id="Gxn-0P-w7n"/>
+                            <constraint firstItem="3Yk-qM-rWk" firstAttribute="height" secondItem="XS7-u4-LeW" secondAttribute="height" id="QbM-mw-yd0"/>
+                            <constraint firstItem="3Yk-qM-rWk" firstAttribute="centerY" secondItem="xNb-2g-iCq" secondAttribute="centerY" id="Uri-Bl-WdT"/>
+                            <constraint firstItem="XS7-u4-LeW" firstAttribute="height" secondItem="xNb-2g-iCq" secondAttribute="height" multiplier="0.1" id="WkQ-jK-wSW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XS7-u4-LeW" secondAttribute="trailing" constant="20" id="ukh-eY-MNd"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Buttons" id="Xo5-i5-nH0"/>
+                    <tabBarItem key="tabBarItem" title="Buttons" image="alertIcon" id="Xo5-i5-nH0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cl-h4-v73" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078" y="893"/>
+            <point key="canvasLocation" x="1078" y="909"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2al-8N-NXy">
@@ -217,6 +237,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CCn-fH-nPy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A3R-k9-INI">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -231,4 +252,9 @@
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alertIcon" width="30" height="30"/>
+        <image name="googleIcon" width="30" height="30"/>
+        <image name="hashIcon" width="30" height="30"/>
+    </resources>
 </document>
